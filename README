@@ -1,0 +1,101 @@
+# Smart Weather Classification & Recommendation System
+
+## Overview
+
+This project is a Computer Vision system that classifies weather conditions from images using Deep Learning and provides simple recommendations based on the predicted result.
+
+The model takes an image as input, predicts the weather class, and outputs a suitable suggestion (e.g., go out / take precautions).
+
+---
+
+## Features
+
+* Image-based weather classification (8 classes)
+* Uses MobileNetV2 with Transfer Learning & Fine-Tuning
+* Handles real-world images
+* Provides recommendation based on prediction
+* Achieves ~86.5% accuracy
+
+---
+
+## Classes
+
+* Cloudy
+* Dusty
+* Foggy
+* Other
+* Rainy
+* Snowy
+* Stormy
+* Sunny
+
+---
+
+## Dataset
+
+* Collected from multiple Kaggle datasets
+* Merged and cleaned into one dataset
+* Final size: ~37,723 images
+* Balanced using data augmentation
+* Split into:
+
+  * 70% Training
+  * 20% Validation
+  * 10% Testing
+
+---
+
+## Model
+
+* Base Model: MobileNetV2 (pre-trained on ImageNet)
+* Transfer Learning applied
+* Fine-Tuning used to improve performance
+* Final layer: Softmax for multi-class classification
+
+---
+
+## Results
+
+* Test Accuracy: **86.5%**
+* Strong performance on:
+
+  * Dusty
+  * Stormy
+  * Foggy
+* Some confusion between:
+
+  * Cloudy and Sunny
+
+---
+
+## Output
+
+The system provides:
+
+* Predicted weather class
+* Confidence score
+* Recommendation (e.g., safe to go out / take caution)
+
+---
+
+## Tools & Technologies
+
+* Python
+* TensorFlow / Keras
+* Google Colab
+* Scikit-learn
+* Kaggle datasets
+
+---
+
+## Future Work
+
+* Deploy as mobile application
+* Real-time camera prediction
+* Use larger datasets
+* Try advanced models (EfficientNet)
+* Add smart alert system
+
+
+
+
